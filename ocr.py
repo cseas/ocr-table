@@ -1,3 +1,4 @@
+# alternate approach using pyocr
 from PIL import Image
 import sys
 
