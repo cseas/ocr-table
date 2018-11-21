@@ -18,12 +18,12 @@ def convert(fname):
     else:
         pagenums = set(pages)
 
-    output = StringIO()
+    output = BytesIO()
     manager = PDFResourceManager()
     converter = TextConverter(manager, output, laparams=LAParams())
     interpreter = PDFPageInterpreter(manager, converter)
 
-    infile = file(fname, 'rb')
+    infile = open(fname, 'rb')
     for page in PDFPage.get_pages(infile, pagenums):
         interpreter.process_page(page)
     infile.close()
@@ -34,7 +34,7 @@ def convert(fname):
 
     # write to .txt
     text_file = open("output.txt", "w")
-    text = re.sub("\s\s+", " ", text)
+    text = re.sub("\s\s+", " ", text.decode('utf-8'))
     text_file.write("%s" % text)
     text_file.close()
 

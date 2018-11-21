@@ -1,3 +1,7 @@
+# shellocr.py
+# Extract OCR using Tesseract
+# Created by Abhijeet Singh
+
 import subprocess
 import shlex
 # shlex is used for passing parameters

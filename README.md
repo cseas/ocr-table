@@ -11,3 +11,14 @@ This project aims to extract tables from scanned image PDFs using Optical Charac
 	```
 
 3. The scanned text files shall be available in the [txt/](txt) folder once the process completes.
+
+# Alternate
+
+1. If the above doesn't work for you, try the alternate method.
+
+2. Save your file as input.pdf in the root directory.
+
+3. Run
+	```sh
+	python3 pdf_miner.py 
+	```
