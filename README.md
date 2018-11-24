@@ -1,6 +1,28 @@
 # ocr-table
 This project aims to extract tables from scanned image PDFs using Optical Character Recognition.
 
+# Install Requirements
+
+1. Tesseract OCR
+	```sh
+	sudo apt-get install tesseract-ocr
+	```
+
+2. Imagemagick
+	```sh
+	sudo apt-get install imagemagick
+	```
+
+3. PDF Utilities
+	```sh
+	sudo apt-get install poppler-utils
+	```
+
+4. Python packages
+	```sh
+	sudo pip install requirements.txt
+	```
+
 # Usage
 
 1. Clear the [pdf/](pdf) folder and copy all your pdf files to be scanned in it.

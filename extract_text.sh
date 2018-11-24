@@ -21,7 +21,7 @@ for FILEPATH in $BPATH*.pdf; do
     OUTFILE=$OPATH$(basename $FILEPATH).txt
     touch "$OUTFILE"    # The text file will be created regardless of whether
                         #  text is successfully extracted.
-    # First attempt ot use pdftotext to extract embedded text.
+    # First attempt to use pdftotext to extract embedded text.
     echo -n "Attempting pdftotext extraction..."
     pdftotext "$FILEPATH" "$OUTFILE"
     FILESIZE=$(wc -w < "$OUTFILE")
