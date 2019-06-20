@@ -1,1 +1,2 @@
 pdfminer.six
+chardet==3.0.4
