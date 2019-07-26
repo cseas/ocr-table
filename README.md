@@ -20,7 +20,7 @@ This project aims to extract tables from scanned image PDFs using Optical Charac
 
 4. Python packages
 	```sh
-	sudo pip install requirements.txt
+	sudo pip install -r requirements.txt
 	```
 
 # Usage
